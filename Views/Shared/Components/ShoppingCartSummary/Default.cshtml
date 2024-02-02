@@ -1,0 +1,10 @@
+﻿@model ShoppingCartViewModel
+
+@if (Model.ShoppingCart.ShoppingCartItems.Count > 0){
+    <li>
+        <a class="btn btn-outline-success" asp-controller="ShoppingCart">
+           Cart -
+                @Model.ShoppingCart.ShoppingCartItems.Count
+        </a>
+    </li>
+}
